@@ -19,11 +19,10 @@
 ; and a nice bottom bar
 (define bottom-bar 5)
 
-
 (define (ltt body-text)
   (para #:align 'left (tt body-text)))
 
-(slide #:title "Consider Nix" nix-logo) 
+(slide #:title "Consider Nix" nix-logo)
 
 (slide #:title "About me"
        (t "Nix enjoyer since 2016")
@@ -37,18 +36,15 @@
 
 (slide (t "A language?"))
 
-(slide (t "All of the above, actually")
-         nix-trinity-meme)
+(slide (t "All of the above, actually") nix-trinity-meme)
 
 (slide #:title "The value proposition")
 
 (slide (t "Always working development environment"))
 
-(slide (t "Polyglot builds")
-       (t "if you can build it, you can build it with nix"))
+(slide (t "Polyglot builds") (t "if you can build it, you can build it with nix"))
 
-(slide (t "Baked in CI")
-       (t "The same environment in CI and locally"))
+(slide (t "Baked in CI") (t "The same environment in CI and locally"))
 
 (slide (t "The mess we are in in")
        'next
@@ -56,24 +52,17 @@
        'next
        (ltt "> less README"))
 
-(slide #:title "npx but for everything"
-        (scale ponysay 0.8))
-       
-(slide (t "nvm but for everything")
+(slide #:title "npx but for everything" (scale ponysay 0.8))
+
+(slide #:title "nvm but for everything"
        (ltt "NIX-DEMO >nix develop nixpkgs#openjdk17")
        (ltt "nix:zulu17.34.19) NIX-DEMO > "))
 
-(slide
-       (t "A demo of nix develop and a flake")
-       'next
-       (t "A demo of nix build, docker, artifact etc"))
-
+(slide (t "A demo of nix develop and a flake"))
 
 (slide #:title "Which parts are valuable?"
        'next
-       
        (t "Providing developer environments :heavy-checkmark:")
-       
        'next
        (t "ephemeral tooling :heavy-checkmark")
        'next
