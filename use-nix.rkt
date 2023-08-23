@@ -38,9 +38,14 @@
        (t "I would like for you to try out nix"))
 
 (slide #:title "An experience report"
-       (t "Not one broken upgrade since 2016")
        'next 
-       (t "Bare metal servers in a data center. It was very cattle"))
+       (t "Not one broken upgrade since 2016")
+       'next
+       (t "")
+       'next 
+       (t "Bare metal servers in a data center. It was very cattle")
+       'next
+       (t "Projects that just work*"))
 
 (slide #:title "What is Nix"
        (t "A package manager?")
@@ -52,12 +57,13 @@
 
 (slide #:title  "A community?"
  (t "nixpkgs: Half a million commits, over 5000 contributors, 10k forks")
- (t "over 80k packages, similar to aur, twice the size of debian"))
+ (t "over 80k packages, similar to aur, twice the size of apt")
+ (t "nix is eating open source")
 
 (slide #:title "The value proposition")
 
 (slide (t "Always working development environment")
-       (t "How much work should that be?")
+       (t "How much work should that be?"))
 
 (slide (t "Polyglot builds")
        (t "if you can build it, you can build it with nix"))
@@ -82,30 +88,23 @@
        (ltt "nix:zulu17.34.19) NIX-DEMO > "))
 
 (slide
-       ;; this guy here should use vscode
-       (t "A demo of nix develop and a flake"))
-       ;; Kotlin
-       ;; go
-       ;; haskell
-       ;; node or somesuch
-
-
+      (t "A demo of nix develop and a flake"))
+       
 (slide #:title "Which parts are valuable?"
        'next
        (t "Providing developer environments :heavy-checkmark:")  
        'next
        (t "ephemeral tooling :heavy-checkmark")
        'next
-       (t "installing packages :heavy-checkmark")
-       'next
-       (t "build"))
+       (t "installing packages :heavy-checkmark"))
+       
 
 (slide #:title "Not the builds?!?"
        (t "it depends")
        'next
        (t "you already know how to build your project")
        'next
-       (t "incremental builds > reproducible builds, for developers")
+       (t "incremental builds > reproducible builds, for developers when developing")
        'next 
        (t "you should still be able to reproduce a build!"))
 
