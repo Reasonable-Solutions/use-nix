@@ -41,7 +41,7 @@
        'next 
        (t "Not one broken upgrade since 2016")
        'next
-       (t "")
+       (t "Sometimes I've had to roll back")
        'next 
        (t "Bare metal servers in a data center. It was very cattle")
        'next
@@ -50,7 +50,9 @@
 (slide #:title "What is Nix"
        (t "A package manager?")
        'next
-       (t "A language that looks like json with functions and comments?"))
+       (t "A language that looks like json with functions and comments?")
+       'next
+       (t "an operating system?"))
 
 (slide (t "All and none of the above")
          nix-trinity-meme)
@@ -58,27 +60,33 @@
 (slide #:title  "A community?"
  (t "nixpkgs: Half a million commits, over 5000 contributors, 10k forks")
  (t "over 80k packages, similar to aur, twice the size of apt")
- (t "nix is eating open source")
+ (t "nix is eating open source"))
+
+(slide #:title "A commercial ecosystem"
+       (t "There's more consultancies and service providers then you can shake a stick at"))
 
 (slide #:title "The value proposition")
 
-(slide (t "Always working development environment")
+(slide (t "Always working development environments")
        (t "How much work should that be?"))
 
 (slide (t "Polyglot builds")
-       (t "if you can build it, you can build it with nix"))
+       (t "if you can build it, you can build it with nix")
+       (t "how much work should that be?"))
 
 (slide (t "Baked in CI")
        (t "The same environment in CI and locally")
        (ltt  "$ git commit -m \"ci please work!!!\""))
 
-(slide (t "The mess we are in in")
+(slide (t "Pervasive shareable caches, build once!"))
+
+(slide (t "The mess we are in")
        'next
        (ltt "> git clone my-cool-project")
        'next
        (ltt "> less README")
        'next
-       (ltt "> make"))
+       (ltt "> make (??)"))
   
 (slide #:title "npx but for everything"
         (scale ponysay 0.8))
@@ -88,7 +96,7 @@
        (ltt "nix:zulu17.34.19) NIX-DEMO > "))
 
 (slide
-      (t "A demo of nix develop and a flake"))
+      (t "A little demo"))
        
 (slide #:title "Which parts are valuable?"
        'next
@@ -98,7 +106,6 @@
        'next
        (t "installing packages :heavy-checkmark"))
        
-
 (slide #:title "Not the builds?!?"
        (t "it depends")
        'next
@@ -109,6 +116,6 @@
        (t "you should still be able to reproduce a build!"))
 
 (slide #:title "resources"
+       (t "https://zero-to-nix.com/start/install")
        (t "nix.dev")
-       (t "")
-       )
+       (t "github.com/nixos/nixpkgs"))
